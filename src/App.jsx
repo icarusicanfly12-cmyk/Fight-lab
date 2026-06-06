@@ -314,3 +314,31 @@ export default function FightLab() {
             </div>
           ))}
           <div
+<div style={s.sec}>WEEK {currentWeek} NOTES</div>
+      <div style={s.card}>
+        <div style={{ padding: "14px" }}>
+          <textarea
+            value={noteInput}
+            onChange={e => setNoteInput(e.target.value)}
+            onBlur={() => saveNote(currentWeek, noteInput)}
+            placeholder={`Week ${currentWeek} — How's the training?`}
+            style={{ width: "100%", background: "#080808", border: "1px solid #1e1e1e", borderRadius: "10px", color: "#888", fontSize: "13px", padding: "14px", minHeight: "110px", resize: "none", fontFamily: "sans-serif", lineHeight: "1.5" }}
+          />
+          <div style={{ fontSize: "10px", color: "#222", marginTop: "6px" }}>AUTO-SAVES ON TAP AWAY</div>
+        </div>
+      </div>
+      <div style={s.sec}>WHAT TO MEASURE</div>
+      <div style={s.card}>
+        <div style={{ padding: "14px 16px" }}>
+          {["Gas tank — rounds before you gas out?","Technique — combos feeling smoother?","Conditioning — pushing harder than week 1?","Body weight — on lean bulk track?","App value — structure helping or generic?"].map((item, i) => (
+            <div key={i} style={{ padding: "9px 0", fontSize: "13px", color: "#555", borderBottom: i < 4 ? "1px solid #111" : "none", display: "flex", gap: "10px" }}>
+              <span style={{ color: "#ef4444", flexShrink: 0, fontWeight: 700 }}>{i + 1}</span>
+              <span>{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div style={{ height: "24px" }} />
+    </div>
+  );
+}
