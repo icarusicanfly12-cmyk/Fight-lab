@@ -312,5 +312,6 @@ export default function FightLab() {
                 );
               })}
             </div>
+
           ))}
           <div
