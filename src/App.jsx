@@ -140,7 +140,7 @@ export default function FightLab() {
   const s = {
     app: { fontFamily: "'Barlow', sans-serif", background: "#080808", minHeight: "100vh", color: "#fff", maxWidth: "430px", margin: "0 auto", paddingBottom: "72px" },
     header: { padding: "18px 20px 12px", borderBottom: "1px solid #161616", display: "flex", justifyContent: "space-between", alignItems: "center" },
-    nav: { position: "fixed", bottom: 0, left: "50%", transform: "translateX(-50%)", width: "100%", maxWidth: "430px", background: "#0c0c0c", borderTop: "1px solid #1a1a1a", display: "flex", zIndex: 100 },
+   nav: {position:"fixed",bottom:0,left:0,right:0,background:"#0c0c0c",borderTop:"1px solid #1a1a1a",display:"flex",zIndex:100},
     nb: (a) => ({ flex: 1, padding: "10px 0 8px", background: "none", border: "none", color: a ? "#ef4444" : "#3a3a3a", cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: "3px", fontSize: "9px", fontFamily: "'Oswald', sans-serif", letterSpacing: "1.5px", transition: "color 0.2s" }),
     card: { background: "#0f0f0f", margin: "10px 14px", borderRadius: "14px", overflow: "hidden", border: "1px solid #181818" },
     sec: { fontFamily: "'Oswald', sans-serif", fontSize: "10px", letterSpacing: "3px", color: "#3a3a3a", padding: "18px 18px 6px", textTransform: "uppercase" },
